@@ -224,7 +224,7 @@ export const ActionsSection: React.FC<ActionsSectionProps> = ({ onOpenDonate }) 
                       </span>
 
                       {/* LEFT / TOP COMPLETE PHOTO BLOCK */}
-                      <div className="md:col-span-5 lg:col-span-6 w-full h-[148px] sm:h-[185px] md:h-[260px] lg:h-[330px] xl:h-[370px] flex items-center shrink-0">
+                      <div className="md:col-span-5 lg:col-span-6 w-full h-[148px] sm:h-[180px] md:h-full md:max-h-[360px] min-h-0 flex items-center shrink-0">
                         {hasCompanionPhoto ? (
                           <div className="grid grid-cols-12 gap-2.5 sm:gap-3.5 w-full h-full items-center">
                             <div className="col-span-7 h-full overflow-hidden rounded-xl sm:rounded-2xl bg-[#12366F] shadow-journal ring-1 ring-[#12366F]/10">

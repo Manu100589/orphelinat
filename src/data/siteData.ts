@@ -239,7 +239,7 @@ export const DAILY_LIFE_CHAPTERS: DailyChapter[] = [
       "Chaque question posée, chaque page lue et chaque exercice réussi renforcent la confiance en soi. L'encadrement éducatif aide chaque enfant à révéler son potentiel et à croire en son avenir.",
     image: '/images/regard-espoir.jpg',
     imageAlt: "Portrait lumineux d'une enfant attentive pleine de curiosité et d'espoir",
-    imagePosition: '50% 22%',
+    imagePosition: '50% 58%',
     theme: 'terracotta',
   },
   {
@@ -265,7 +265,7 @@ export const DAILY_LIFE_CHAPTERS: DailyChapter[] = [
       "L'après-midi laisse place au mouvement et aux éclats de rire. Qu'il s'agisse d'une partie de ballon, d'un tour à vélo ou d'un jeu entre sœurs, la cour résonne de vie et de liberté.",
     image: '/images/sourire-ballon.jpg',
     imageAlt: 'Sourire radieux pendant les jeux de ballon au centre',
-    imagePosition: '50% 18%',
+    imagePosition: '50% 24%',
     theme: 'sun',
   },
   {
@@ -278,7 +278,7 @@ export const DAILY_LIFE_CHAPTERS: DailyChapter[] = [
       "Quand la lumière s'adoucit, le calme revient dans la maison. Entourés d'affection et de repères solides, les enfants peuvent fermer les yeux sereinement et imaginer tout ce qu'ils deviendront demain.",
     image: '/images/gratitude-sourire.jpg',
     imageAlt: "Instant de gratitude et de sourire paisible d'une jeune fille au centre",
-    imagePosition: '50% 25%',
+    imagePosition: '50% 34%',
     theme: 'dusk',
   },
 ]

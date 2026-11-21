@@ -266,7 +266,7 @@ export const DailyLifeSection: React.FC = () => {
                 return (
                   <article
                     key={chap.id}
-                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-6 lg:p-9 flex flex-col justify-start md:grid md:grid-cols-12 gap-3.5 sm:gap-6 lg:gap-10 md:items-center overflow-y-auto md:overflow-hidden will-change-transform backdrop-blur-md"
+                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-5 lg:p-7 flex flex-col justify-start md:grid md:grid-cols-12 gap-3.5 sm:gap-5 lg:gap-8 md:items-center overflow-y-auto will-change-transform backdrop-blur-md"
                     style={{
                       backgroundColor: chapTheme.cardBg,
                       borderColor: chapTheme.cardBorder,
@@ -276,17 +276,17 @@ export const DailyLifeSection: React.FC = () => {
                     {/* Faint XXL Background Number */}
                     <span
                       aria-hidden="true"
-                      className="pointer-events-none select-none absolute -bottom-5 right-6 font-serif-display italic font-bold text-[5.5rem] sm:text-[9rem] leading-none opacity-[0.07]"
+                      className="pointer-events-none select-none absolute -bottom-5 right-6 font-serif-display italic font-bold text-[5rem] sm:text-[8rem] leading-none opacity-[0.07]"
                     >
                       {chap.number}
                     </span>
 
-                    {/* LEFT / TOP COMPLETE PHOTOGRAPH */}
-                    <div className="md:col-span-6 w-full h-[185px] sm:h-[225px] md:h-[300px] lg:h-[360px] xl:h-[400px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/15 relative shrink-0">
+                    {/* LEFT / TOP COMPLETE PHOTOGRAPH — Fluid height so it never pushes text out on compact screens */}
+                    <div className="md:col-span-6 w-full h-[175px] sm:h-[210px] md:h-full md:max-h-[370px] min-h-0 rounded-xl sm:rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/15 relative shrink-0">
                       <img
                         src={chap.image}
                         alt={chap.imageAlt}
-                        style={{ objectPosition: chap.imagePosition ?? '50% 25%' }}
+                        style={{ objectPosition: chap.imagePosition ?? '50% 35%' }}
                         className="w-full h-full object-cover"
                       />
                       <span className="absolute top-2.5 left-2.5 px-3 py-1 rounded-full bg-[#FFFDF8]/95 text-[#12366F] font-ui font-bold text-[10.5px] sm:text-[11px] shadow-sm inline-flex items-center gap-1.5">
@@ -298,10 +298,10 @@ export const DailyLifeSection: React.FC = () => {
                     </div>
 
                     {/* RIGHT / BOTTOM COMPLETE EDITORIAL BLOCK */}
-                    <div className="md:col-span-6 space-y-2.5 sm:space-y-3.5 lg:space-y-4 relative z-10 flex flex-col justify-center">
+                    <div className="md:col-span-6 space-y-2 sm:space-y-2.5 lg:space-y-3.5 relative z-10 flex flex-col justify-center">
                       <div className="flex items-center gap-2.5">
                         <span
-                          className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0"
+                          className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center shrink-0"
                           style={{
                             backgroundColor: chapTheme.pillIdleBg,
                             color: chapTheme.accent,
@@ -310,27 +310,27 @@ export const DailyLifeSection: React.FC = () => {
                           <Icon className="w-4 h-4" />
                         </span>
                         <span
-                          className="font-ui text-[10.5px] sm:text-xs font-bold uppercase tracking-[0.2em]"
+                          className="font-ui text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em]"
                           style={{ color: chapTheme.accent }}
                         >
                           Étape {chap.number} · {chap.timeLabel}
                         </span>
                       </div>
 
-                      <h3 className="font-serif-display font-semibold text-[1.35rem] sm:text-[1.85rem] lg:text-[2.25rem] xl:text-[2.45rem] leading-[1.1] tracking-[-0.02em]">
+                      <h3 className="font-serif-display font-semibold text-[1.25rem] sm:text-[1.6rem] lg:text-[2rem] xl:text-[2.25rem] leading-[1.1] tracking-[-0.02em]">
                         {chap.title}
                       </h3>
 
                       <p
-                        className="font-serif-display italic text-[14px] sm:text-[16.5px] lg:text-[18px] leading-snug"
+                        className="font-serif-display italic text-[13.5px] sm:text-[15px] lg:text-[16.5px] leading-snug"
                         style={{ color: chapTheme.accent }}
                       >
                         {chap.subtitle}
                       </p>
 
-                      {/* Full Narrative Paragraph — 100% visible, zero truncation */}
+                      {/* Full Narrative Paragraph — 100% visible, zero clipping */}
                       <p
-                        className="text-[13px] sm:text-[14.5px] lg:text-[15.5px] leading-[1.6] sm:leading-[1.72]"
+                        className="text-[12.5px] sm:text-[13.5px] lg:text-[14.5px] xl:text-[15.5px] leading-[1.55] sm:leading-[1.65]"
                         style={{ color: chapTheme.muted }}
                       >
                         {chap.narrative}
