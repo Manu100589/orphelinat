@@ -218,7 +218,7 @@ export const ActionsSection: React.FC<ActionsSectionProps> = ({ onOpenDonate }) 
                       {/* Faint XXL Background Number */}
                       <span
                         aria-hidden="true"
-                        className="pointer-events-none select-none absolute -bottom-4 right-5 font-serif-display italic font-bold text-[5.5rem] sm:text-[8.5rem] leading-none text-[#12366F]/[0.05]"
+                        className="pointer-events-none select-none absolute bottom-2 right-5 font-serif-display italic font-bold text-[5.5rem] sm:text-[8.5rem] leading-none text-[#12366F]/[0.05]"
                       >
                         {pillar.number}
                       </span>

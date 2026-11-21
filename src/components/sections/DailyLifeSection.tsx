@@ -266,7 +266,7 @@ export const DailyLifeSection: React.FC = () => {
                 return (
                   <article
                     key={chap.id}
-                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-5 lg:p-7 flex flex-col justify-start md:grid md:grid-cols-12 gap-3.5 sm:gap-5 lg:gap-8 md:items-center overflow-y-auto will-change-transform backdrop-blur-md"
+                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-5 lg:p-7 flex flex-col justify-start md:grid md:grid-cols-12 gap-3.5 sm:gap-5 lg:gap-8 md:items-center overflow-y-auto md:overflow-hidden will-change-transform backdrop-blur-md"
                     style={{
                       backgroundColor: chapTheme.cardBg,
                       borderColor: chapTheme.cardBorder,
@@ -276,7 +276,7 @@ export const DailyLifeSection: React.FC = () => {
                     {/* Faint XXL Background Number */}
                     <span
                       aria-hidden="true"
-                      className="pointer-events-none select-none absolute -bottom-5 right-6 font-serif-display italic font-bold text-[5rem] sm:text-[8rem] leading-none opacity-[0.07]"
+                      className="pointer-events-none select-none absolute bottom-2 right-6 font-serif-display italic font-bold text-[5rem] sm:text-[8rem] leading-none opacity-[0.07]"
                     >
                       {chap.number}
                     </span>
