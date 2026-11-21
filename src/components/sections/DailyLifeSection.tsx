@@ -266,7 +266,7 @@ export const DailyLifeSection: React.FC = () => {
                 return (
                   <article
                     key={chap.id}
-                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-6 lg:p-9 flex flex-col justify-center md:grid md:grid-cols-12 gap-4 sm:gap-6 lg:gap-10 md:items-center overflow-y-auto md:overflow-hidden will-change-transform backdrop-blur-md"
+                    className="daily-hslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl border shadow-2xl p-4 sm:p-6 lg:p-9 flex flex-col justify-start md:grid md:grid-cols-12 gap-3.5 sm:gap-6 lg:gap-10 md:items-center overflow-y-auto md:overflow-hidden will-change-transform backdrop-blur-md"
                     style={{
                       backgroundColor: chapTheme.cardBg,
                       borderColor: chapTheme.cardBorder,

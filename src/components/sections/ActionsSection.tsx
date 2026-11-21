@@ -213,7 +213,7 @@ export const ActionsSection: React.FC<ActionsSectionProps> = ({ onOpenDonate }) 
                   return (
                     <article
                       key={pillar.id}
-                      className="action-vslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl bg-[#F1F5FB] border border-[#12366F]/14 shadow-journal p-3.5 sm:p-5 lg:p-8 flex flex-col justify-center md:grid md:grid-cols-12 gap-3 sm:gap-5 lg:gap-9 md:items-center overflow-y-auto md:overflow-hidden will-change-transform"
+                      className="action-vslide absolute inset-0 w-full h-full rounded-2xl sm:rounded-3xl bg-[#F1F5FB] border border-[#12366F]/14 shadow-journal p-3.5 sm:p-5 lg:p-8 flex flex-col justify-start md:grid md:grid-cols-12 gap-3 sm:gap-5 lg:gap-9 md:items-center overflow-y-auto md:overflow-hidden will-change-transform"
                     >
                       {/* Faint XXL Background Number */}
                       <span
