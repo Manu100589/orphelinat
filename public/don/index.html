@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campagne de Don — Orphelinat Espoir du Demain (OED)</title>
+  <meta name="description" content="Campagne de don pour l'achat de la parcelle de l'Orphelinat Espoir du Demain (OED) à Kimbanseke, Kinshasa. Votre don peut nous aider à bien dormir et à ne pas retourner dans la rue." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,800;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="../" class="brand" aria-label="Retour à l'accueil — Orphelinat Espoir du Demain">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 17.5L18 6.5L31 17.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 15V29H27V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 25C18 25 13 21.8 13 18.6C13 17.1 14.2 16 15.6 16C16.6 16 17.5 16.6 18 17.4C18.5 16.6 19.4 16 20.4 16C21.8 16 23 17.1 23 18.6C23 21.8 18 25 18 25Z" fill="#FFD233"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <strong>Espoir du Demain</strong>
+          <span>Orphelinat • OED</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="../">← Accueil</a>
+        <a href="#mission">La Mission</a>
+        <a href="#impact">Pourquoi Donner</a>
+        <a href="#donner">Faire un Don</a>
+        <a href="#localisation">Nous Trouver</a>
+        <a href="#faq">Questions</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#donner" class="btn btn--primary btn--sm">
+          <span>Faire un don</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="../" class="mobile-menu__link">← Retour à l'accueil</a>
+      <a href="#mission" class="mobile-menu__link">La Mission</a>
+      <a href="#impact" class="mobile-menu__link">Pourquoi Donner</a>
+      <a href="#donner" class="mobile-menu__link">Faire un Don</a>
+      <a href="#localisation" class="mobile-menu__link">Nous Trouver</a>
+      <a href="#faq" class="mobile-menu__link">Questions</a>
+      <a href="#donner" class="btn btn--gold mobile-menu__cta">Soutenir l'OED maintenant</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION — FULL IMMERSIVE -->
+    <section class="hero hero--immersive">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="assets/hero-enfant.jpg"
+          alt=""
+          class="hero__bg-img"
+          id="heroBgImg"
+          loading="eager"
+        />
+        <div class="hero__scrim"></div>
+        <div class="hero__vignette"></div>
+      </div>
+
+      <div class="container hero__immersive-inner">
+        <div class="hero__content">
+          <div class="pill hero-anim">
+            <span class="pill__dot"></span>
+            <span>Campagne d'urgence • Achat de la parcelle (OED)</span>
+          </div>
+
+          <h1 class="hero__title hero-anim">
+            Votre don peut nous aider à <span class="text-highlight">bien dormir</span> et à ne pas retourner dans la rue.
+          </h1>
+
+          <p class="hero__subtitle hero-anim">
+            Ensemble, sécurisons l'achat définitif de la parcelle de <strong>l'Orphelinat Espoir du Demain (OED)</strong> à Kimbanseke. Un geste aujourd'hui offre à ces enfants un toit permanent et un avenir digne.
+          </p>
+
+          <div class="hero__cta-group hero-anim">
+            <a href="#donner" class="btn btn--gold btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21s-7.5-4.7-9.5-9.2C1.2 8.7 3.2 5 6.8 5c2 0 3.6 1 5.2 2.8C13.6 6 15.2 5 17.2 5c3.6 0 5.6 3.7 4.3 6.8C19.5 16.3 12 21 12 21z" fill="currentColor"/>
+              </svg>
+              <span>Faire un don maintenant</span>
+            </a>
+            <a href="#mission" class="btn btn--ghost-light btn--lg">
+              <span>Découvrir la campagne</span>
+            </a>
+          </div>
+
+          <div class="hero__trust hero-anim">
+            <div class="trust-item">
+              <span class="trust-item__icon" aria-hidden="true">✓</span>
+              <span>Don direct sans intermédiaire</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-item__icon" aria-hidden="true">✓</span>
+              <span>Orange Money &amp; M-PESA</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-item__icon" aria-hidden="true">✓</span>
+              <span>Visite ouverte à Kimbanseke</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Floating Glass Bar -->
+        <div class="hero__dock hero-anim">
+          <div class="hero__dock-quote">
+            <span aria-hidden="true">❤️</span>
+            <div>
+              <strong>« Un geste qui change mon avenir »</strong>
+              <span>Orphelinat Espoir du Demain • Kimbanseke, Kinshasa</span>
+            </div>
+          </div>
+
+          <div class="quick-pay-strip">
+            <button class="quick-pay-chip" data-copy="+243 895 888 202" data-label="Orange Money">
+              <span class="quick-pay-chip__tag quick-pay-chip__tag--orange">Orange Money</span>
+              <strong>+243 895 888 202</strong>
+              <span class="quick-pay-chip__copy">Copier</span>
+            </button>
+            <button class="quick-pay-chip" data-copy="+243 815 079 946" data-label="M-PESA">
+              <span class="quick-pay-chip__tag quick-pay-chip__tag--mpesa">M-PESA</span>
+              <strong>+243 815 079 946</strong>
+              <span class="quick-pay-chip__copy">Copier</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a href="#mission" class="hero__scroll-cue" aria-label="Défiler vers la mission">
+        <span>Découvrir</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- KEY HIGHLIGHTS STRIP -->
+    <section class="stats-strip" aria-label="Points clés de la campagne">
+      <div class="container stats-strip__grid">
+        <div class="stat-card reveal-up">
+          <div class="stat-card__value">
+            <span class="counter" data-target="100">0</span>%
+          </div>
+          <p class="stat-card__label">Consacré à l'achat de la parcelle de l'OED</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <div class="stat-card__value">
+            <span class="counter" data-target="25">0</span>+
+          </div>
+          <p class="stat-card__label">Enfants protégés à qui offrir un toit définitif</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <div class="stat-card__value">
+            <span class="counter" data-target="2">0</span>
+          </div>
+          <p class="stat-card__label">Canaux Mobile Money directs et vérifiés</p>
+        </div>
+        <div class="stat-card reveal-up">
+          <div class="stat-card__value">24/7</div>
+          <p class="stat-card__label">Un abri sûr pour bien dormir loin de la rue</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION / URGENCY SECTION -->
+    <section class="section section--cream" id="mission">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="eyebrow">La Mission de l'OED</span>
+          <h2 class="section-title">Pourquoi l'achat de cette parcelle est vital aujourd'hui</h2>
+          <p class="section-lead">
+            Sans parcelle propre, les enfants vivent sous la menace constante de devoir quitter leur refuge. Acheter ce terrain, c'est transformer un abri temporaire en véritable foyer pour toute une génération.
+          </p>
+        </div>
+
+        <div class="mission-showcase reveal-card">
+          <div class="poster-frame">
+            <img
+              src="assets/campagne-oed.jpg"
+              alt="Affiche officielle de la campagne de don — Orphelinat Espoir du Demain (OED)"
+              class="poster-frame__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="mission-showcase__text">
+            <span class="eyebrow eyebrow--gold">Affiche officielle de la campagne</span>
+            <h3>Chaque enfant mérite un foyer stable et aimant</h3>
+            <p>
+              Cette campagne mobilise les cœurs solidaires à Kinshasa et dans la diaspora pour acheter définitivement la parcelle de <strong>l'Orphelinat Espoir du Demain (OED)</strong>.
+            </p>
+            <a href="#donner" class="btn btn--primary">Soutenir l'achat de la parcelle</a>
+          </div>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card reveal-card">
+            <div class="mission-card__icon mission-card__icon--blue" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M3 10.5L12 3L21 10.5V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 21V13H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Un toit permanent, hors de danger</h3>
+            <p>
+              Posséder la parcelle met définitivement fin aux risques d'expulsion et garantit que ces enfants ne retourneront jamais dormir dans la rue.
+            </p>
+          </article>
+
+          <article class="mission-card reveal-card">
+            <div class="mission-card__icon mission-card__icon--gold" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Des nuits sereines et dignes</h3>
+            <p>
+              Chaque enfant mérite un lit sûr, un sommeil réparateur et la paix d'esprit nécessaire pour grandir en bonne santé physique et émotionnelle.
+            </p>
+          </article>
+
+          <article class="mission-card reveal-card">
+            <div class="mission-card__icon mission-card__icon--coral" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Un avenir qui se construit</h3>
+            <p>
+              La stabilité d'un foyer permet d'assurer la scolarité, l'encadrement éducatif et l'espoir d'un lendemain meilleur — <em>« Un geste qui change mon avenir »</em>.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DONATION HUB -->
+    <section class="section section--donate" id="donner">
+      <div class="container">
+        <div class="section-header section-header--center reveal-up">
+          <span class="eyebrow eyebrow--gold">Passer à l'action</span>
+          <h2 class="section-title">Faites un don en moins d'une minute</h2>
+          <p class="section-lead">
+            Choisissez le montant que vous souhaitez offrir pour visualiser votre impact, puis effectuez votre transfert directement sur l'un des comptes officiels de l'Orphelinat Espoir du Demain.
+          </p>
+        </div>
+
+        <div class="donate-layout">
+          <!-- Left: Interactive Amount & Impact Calculator -->
+          <div class="donate-panel reveal-card">
+            <div class="donate-panel__top">
+              <div>
+                <h3 class="donate-panel__title">Estimez votre geste</h3>
+                <p class="donate-panel__desc">Aucun don n'est trop petit. Chaque contribution compte.</p>
+              </div>
+              <div class="currency-switch" role="group" aria-label="Choisir la devise">
+                <button type="button" class="currency-switch__btn is-active" data-currency="USD">USD ($)</button>
+                <button type="button" class="currency-switch__btn" data-currency="CDF">CDF (FC)</button>
+              </div>
+            </div>
+
+            <div class="amount-grid" id="amountGrid" role="group" aria-label="Montants suggérés">
+              <!-- Populated / handled cleanly by JS with USD defaults -->
+              <button type="button" class="amount-btn" data-usd="5">5 $</button>
+              <button type="button" class="amount-btn" data-usd="10">10 $</button>
+              <button type="button" class="amount-btn is-selected" data-usd="25">25 $</button>
+              <button type="button" class="amount-btn" data-usd="50">50 $</button>
+              <button type="button" class="amount-btn" data-usd="100">100 $</button>
+              <button type="button" class="amount-btn" data-usd="250">250 $</button>
+            </div>
+
+            <div class="custom-amount">
+              <label for="customAmountInput" class="custom-amount__label">Ou saisissez un montant libre</label>
+              <div class="custom-amount__field">
+                <span class="custom-amount__prefix" id="currencyPrefix">$</span>
+                <input
+                  type="number"
+                  id="customAmountInput"
+                  min="1"
+                  step="1"
+                  value="25"
+                  inputmode="numeric"
+                  aria-label="Montant libre"
+                />
+              </div>
+            </div>
+
+            <div class="impact-preview" id="impactPreview" aria-live="polite">
+              <div class="impact-preview__badge">Votre impact concret</div>
+              <p class="impact-preview__text" id="impactText">
+                Avec <strong>25 $</strong>, vous contribuez directement aux frais d'acquisition de la parcelle et rapprochez les enfants de leur foyer définitif.
+              </p>
+            </div>
+
+            <div class="donate-steps-mini">
+              <div class="mini-step">
+                <span>1</span>
+                <p>Copiez le numéro <strong>Orange Money</strong> ou <strong>M-PESA</strong> ci-contre.</p>
+              </div>
+              <div class="mini-step">
+                <span>2</span>
+                <p>Effectuez votre transfert mobile du montant choisi.</p>
+              </div>
+              <div class="mini-step">
+                <span>3</span>
+                <p>Cliquez sur <em>« J'ai fait mon don »</em> ou partagez la campagne autour de vous.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Direct Payment Channels -->
+          <div class="payment-stack">
+            <!-- Orange Money Card -->
+            <div class="pay-card pay-card--orange reveal-card">
+              <div class="pay-card__header">
+                <div class="pay-card__brand">
+                  <span class="pay-logo pay-logo--orange" aria-hidden="true">OM</span>
+                  <div>
+                    <span class="pay-card__network">Transfert Mobile Direct</span>
+                    <h3>Orange Money</h3>
+                  </div>
+                </div>
+                <span class="pay-card__verified">Compte officiel OED</span>
+              </div>
+
+              <div class="pay-card__number-box">
+                <span class="pay-card__number">+243 895 888 202</span>
+                <button type="button" class="copy-btn" data-copy="+243 895 888 202" data-label="Orange Money">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <span>Copier</span>
+                </button>
+              </div>
+
+              <div class="pay-card__footer">
+                <a href="tel:+243895888202" class="pay-action-link">Appeler ce numéro</a>
+                <span class="pay-hint">Composer *144# depuis Orange RDC</span>
+              </div>
+            </div>
+
+            <!-- M-PESA Card -->
+            <div class="pay-card pay-card--mpesa reveal-card">
+              <div class="pay-card__header">
+                <div class="pay-card__brand">
+                  <span class="pay-logo pay-logo--mpesa" aria-hidden="true">M</span>
+                  <div>
+                    <span class="pay-card__network">Transfert Mobile Direct</span>
+                    <h3>M-PESA (Vodacom)</h3>
+                  </div>
+                </div>
+                <span class="pay-card__verified">Compte officiel OED</span>
+              </div>
+
+              <div class="pay-card__number-box">
+                <span class="pay-card__number">+243 815 079 946</span>
+                <button type="button" class="copy-btn" data-copy="+243 815 079 946" data-label="M-PESA">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <span>Copier</span>
+                </button>
+              </div>
+
+              <div class="pay-card__footer">
+                <a href="tel:+243815079946" class="pay-action-link">Appeler ce numéro</a>
+                <span class="pay-hint">Composer *1122# depuis Vodacom RDC</span>
+              </div>
+            </div>
+
+            <!-- Action Row -->
+            <div class="donate-confirm-bar reveal-card">
+              <button type="button" class="btn btn--primary btn--lg donate-confirm-bar__btn" id="openThankYouBtn">
+                <span>J'ai effectué mon don ❤️</span>
+              </button>
+              <button type="button" class="btn btn--outline btn--lg" id="shareCampaignBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="18" cy="5" r="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="6" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="18" cy="19" r="3" stroke="currentColor" stroke-width="2"/>
+                  <path d="M8.59 13.51L15.42 17.49M15.41 6.51L8.59 10.49" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span>Partager</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARENCY / ROADMAP SECTION -->
+    <section class="section" id="impact">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="eyebrow">Transparence &amp; Étapes</span>
+          <h2 class="section-title">Comment votre générosité bâtit leur demain</h2>
+          <p class="section-lead">
+            Une démarche claire, transparente et vérifiable sur place à tout moment.
+          </p>
+        </div>
+
+        <div class="roadmap">
+          <div class="roadmap__step reveal-card">
+            <div class="roadmap__num">01</div>
+            <h3>Collecte solidaire</h3>
+            <p>
+              Les dons sont reçus directement sur les comptes Orange Money et M-PESA de l'OED ou remis en main propre lors d'une visite à l'orphelinat.
+            </p>
+          </div>
+          <div class="roadmap__step reveal-card">
+            <div class="roadmap__num">02</div>
+            <h3>Achat de la parcelle</h3>
+            <p>
+              Les fonds réunis servent intégralement à acquérir et sécuriser juridiquement la parcelle au nom de l'Orphelinat Espoir du Demain.
+            </p>
+          </div>
+          <div class="roadmap__step reveal-card">
+            <div class="roadmap__num">03</div>
+            <h3>Un foyer sûr pour toujours</h3>
+            <p>
+              Les enfants disposent enfin d'un lieu permanent où bien dormir, étudier et grandir dignement sans jamais craindre la rue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION / VISIT SECTION -->
+    <section class="section section--cream" id="localisation">
+      <div class="container">
+        <div class="location-card reveal-card">
+          <div class="location-card__info">
+            <span class="eyebrow">Nous rendre visite</span>
+            <h2 class="section-title">Venez rencontrer les enfants à Kimbanseke</h2>
+            <p class="location-card__intro">
+              Nos portes sont ouvertes à tous les donateurs, partenaires et personnes de bonne volonté souhaitant visiter l'Orphelinat Espoir du Demain (OED) ou apporter un soutien sur place.
+            </p>
+
+            <ul class="address-list">
+              <li>
+                <span class="address-list__label">Quartier</span>
+                <strong>PASCAL</strong>
+              </li>
+              <li>
+                <span class="address-list__label">Adresse</span>
+                <strong>Route MOKALI, Av. POTO POTO 98</strong>
+              </li>
+              <li>
+                <span class="address-list__label">Référence</span>
+                <strong>1ère Station COBIL — Avant Bar Hôtel KIN KIESE</strong>
+              </li>
+              <li>
+                <span class="address-list__label">Commune</span>
+                <strong>KIMBANSEKE, Kinshasa (RDC)</strong>
+              </li>
+            </ul>
+
+            <div class="location-card__actions">
+              <button
+                type="button"
+                class="btn btn--primary"
+                data-copy="Orphelinat Espoir du Demain (OED) — PASCAL, Route MOKALI, Av. POTO POTO 98, Réf: 1ère Station COBIL, Avant Bar Hôtel KIN KIESE, Commune de KIMBANSEKE, Kinshasa"
+                data-label="Adresse de l'OED"
+              >
+                Copier l'adresse complète
+              </button>
+              <a href="tel:+243895888202" class="btn btn--outline">Nous appeler avant visite</a>
+            </div>
+          </div>
+
+          <div class="location-card__visual">
+            <div class="map-art">
+              <div class="map-art__grid" aria-hidden="true"></div>
+              <div class="map-art__pin">
+                <span class="map-art__pulse" aria-hidden="true"></span>
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="#E63946"/>
+                  <circle cx="12" cy="10" r="3.2" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="map-art__label">
+                <strong>OED • Kimbanseke</strong>
+                <span>Pascal • Route Mokali, Av. Poto Poto 98</span>
+                <small>Réf : 1ère Station COBIL</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center reveal-up">
+          <span class="eyebrow">Questions Fréquentes</span>
+          <h2 class="section-title">Tout savoir sur votre don</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal-card">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span>Comment envoyer un don par Orange Money ou M-PESA ?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__content">
+              <p>
+                Il vous suffit de copier l'un de nos numéros officiels — <strong>+243 895 888 202</strong> (Orange Money) ou <strong>+243 815 079 946</strong> (M-PESA) — et d'effectuer un transfert depuis votre téléphone. Vous pouvez également nous contacter par appel pour confirmer la réception.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span>Puis-je contribuer depuis l'étranger (diaspora) ?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__content">
+              <p>
+                Oui ! Vous pouvez envoyer votre don vers nos numéros Mobile Money RDC via les services internationaux compatibles (Sendwave, Remitly, WorldRemit, TapTap Send, Orange Money International) en utilisant le <strong>+243 895 888 202</strong> ou le <strong>+243 815 079 946</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span>À quoi servira exactement mon don ?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__content">
+              <p>
+                Cette campagne est dédiée à l'<strong>achat de la parcelle de l'Orphelinat Espoir du Demain (OED)</strong> afin d'offrir aux enfants un abri durable, sécurisé et définitif pour qu'ils puissent bien dormir et ne jamais retourner dans la rue.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-card">
+            <button class="faq-item__trigger" aria-expanded="false">
+              <span>Puis-je visiter l'orphelinat ou faire un don en nature ?</span>
+              <span class="faq-item__icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-item__content">
+              <p>
+                Avec grand plaisir. Rendez-vous à <strong>PASCAL, Route MOKALI, Av. POTO POTO 98</strong> (Réf : 1ère Station COBIL, avant Bar Hôtel KIN KIESE, Commune de KIMBANSEKE). Les vivres, matelas, fournitures scolaires et matériaux sont également les bienvenus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container cta-banner__inner reveal-up">
+        <span class="cta-banner__tag">Orphelinat Espoir du Demain (OED)</span>
+        <h2>« Un geste qui change mon avenir »</h2>
+        <p>
+          Aujourd'hui, votre solidarité peut offrir un toit permanent à ces enfants. Partagez cette page ou faites un don dès maintenant.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#donner" class="btn btn--gold btn--lg">Faire un don maintenant</a>
+          <button type="button" class="btn btn--ghost-light btn--lg" id="shareBannerBtn">Partager la campagne</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <strong>Orphelinat Espoir du Demain (OED)</strong>
+        <p>
+          Campagne de don pour l'achat de la parcelle — Offrir aux enfants un toit digne pour bien dormir et ne pas retourner dans la rue.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Dons Mobile Money</h4>
+        <ul>
+          <li>Orange Money : <a href="tel:+243895888202">+243 895 888 202</a></li>
+          <li>M-PESA : <a href="tel:+243815079946">+243 815 079 946</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Adresse</h4>
+        <p>
+          PASCAL, Route MOKALI, Av. POTO POTO 98<br />
+          Réf : 1ère Station COBIL, Avant Bar Hôtel KIN KIESE<br />
+          Commune de KIMBANSEKE, Kinshasa
+        </p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© Orphelinat Espoir du Demain (OED) — Un geste qui change mon avenir.</span>
+    </div>
+  </footer>
+
+  <!-- Thank You Modal -->
+  <div class="modal" id="thankYouModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box">
+      <button type="button" class="modal__close" data-close-modal aria-label="Fermer">×</button>
+      <div class="modal__icon" aria-hidden="true">❤️</div>
+      <h3 id="modalTitle">Merci du fond du cœur !</h3>
+      <p>
+        Votre geste rapproche les enfants de <strong>l'Orphelinat Espoir du Demain (OED)</strong> d'un toit sûr et permanent. Vous venez de contribuer à changer un avenir.
+      </p>
+      <p class="modal__sub">
+        Aidez-nous à amplifier cet élan en partageant cette campagne à 3 personnes autour de vous.
+      </p>
+      <div class="modal__actions">
+        <button type="button" class="btn btn--primary" id="modalShareBtn">Partager la campagne</button>
+        <button type="button" class="btn btn--outline" data-close-modal>Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

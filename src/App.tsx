@@ -73,6 +73,10 @@ export const App: React.FC = () => {
     scrollToSection('contact')
   }, [scrollToSection])
 
+  const handleGoToDonatePage = useCallback(() => {
+    window.location.href = `${import.meta.env.BASE_URL}don/index.html`
+  }, [])
+
   return (
     <div className="min-h-screen bg-[#FFFDF8] text-[#1E2A3D]">
       {/* Accessible skip-to-content link */}
@@ -84,13 +88,13 @@ export const App: React.FC = () => {
       </a>
 
       <Navbar
-        onOpenDonate={() => setSupportModalOpen(true)}
+        onOpenDonate={handleGoToDonatePage}
         onNavigate={scrollToSection}
       />
 
       <main id="main-content">
         <HeroSection
-          onOpenDonate={() => setSupportModalOpen(true)}
+          onOpenDonate={handleGoToDonatePage}
           onNavigate={scrollToSection}
         />
         <StorytellingSection />
